@@ -1,6 +1,6 @@
 function generateRandomNumericID() {
     const digits = '0123456789';
-    const idLength = 6; // Fixed ID length of 6 digits
+    const idLength = 6; 
     let randomID = '';
   
     for (let i = 0; i < idLength; i++) {

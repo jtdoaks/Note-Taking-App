@@ -27,6 +27,8 @@ This project sets up an Express application with separate routes for handling AP
 - htmlRoutes.js: Handles HTML requests, rendering appropriate web pages.
 #### Sending POST Requests
 - The postNote function in app.js demonstrates how to send a POST request to an API endpoint using the node-fetch library. 
+#### Random Number Generation
+- The function in the uuid file generates a random numeric ID by defining a set of possible digits, looping the length, generating a random index and appending to random index to the id of each incoming note.
 
 ## License
 - This project is licensed under the MIT License.
