@@ -1,4 +1,14 @@
-module.exports = () =>
-Math.floor((1 + Math.random())* 0x10000)
-.toString(16)
-.substring(1);
+function generateRandomNumericID() {
+    const digits = '0123456789';
+    const idLength = 6; // Fixed ID length of 6 digits
+    let randomID = '';
+  
+    for (let i = 0; i < idLength; i++) {
+      const randomIndex = Math.floor(Math.random() * digits.length);
+      randomID += digits.charAt(randomIndex);
+    }
+  
+    return randomID;
+  }
+
+module.exports = generateRandomNumericID
