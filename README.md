@@ -11,6 +11,7 @@ Welcome to the **Note Taking Application** repository! This project demonstrates
   - [Routes](#routes)
   - [Sending POST Requests](#sending-post-requests)
 - [License](#license)
+- [Links](#links)
 
 ## Description
 
@@ -32,3 +33,6 @@ This project sets up an Express application with separate routes for handling AP
 
 ## License
 - This project is licensed under the MIT License.
+
+## Links
+- https://github.com/jtdoaks/Note-Taking-App
