@@ -1,11 +1,10 @@
-const express = require('express');
-const app = express();
-const htmlRoutes = require('./htmlRoutes')
+const router = require('express').Router();
+const htmlRoutes = require('./htmlRoutes');
 const apiRoutes = require('./apiRoutes');
 
 
-app.use('/api', apiRoutes)
-app.use('/', htmlRoutes)
+router.use('/api', apiRoutes)
+router.use('/', htmlRoutes)
 
 const postNote = (review) =>
 fetch('api/reviews', {
@@ -28,4 +27,4 @@ fetch('api/reviews', {
 
 
 
-module.exports = app;
+module.exports = router;
